@@ -1,0 +1,33 @@
+prefix: "&f[&b&l即売会&aシステム&f] "
+
+spreadsheet:
+
+  # Spreadsheet ID
+  id: ''
+
+  sheet: "Form name"
+
+  credentials: "credentials.json"
+
+column:
+  mcid: 1
+  plot: 2
+max:
+  A: 10
+  B: 20
+  S: 5
+
+lottery:
+  exclude:
+    - S
+
+status: BEFORE
+
+settings:
+
+  # sync時にreception.ymlを初期化する
+  clear-before-sync: true
+
+  # lottery時にresult.ymlを初期化する
+  clear-before-lottery: true
+

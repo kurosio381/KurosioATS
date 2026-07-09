@@ -1,0 +1,10 @@
+name: KurosioATS
+version: 1.5.3
+main: kurosio.kurosioats.KurosioATS
+api-version: 1.15
+author: kurosio381
+
+commands:
+  ats:
+    description: KurosioATS Command
+    usage: /ats
