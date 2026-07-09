@@ -23,11 +23,3 @@ lottery:
 
 status: BEFORE
 
-settings:
-
-  # sync時にreception.ymlを初期化する
-  clear-before-sync: true
-
-  # lottery時にresult.ymlを初期化する
-  clear-before-lottery: true
-

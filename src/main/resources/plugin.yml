@@ -1,5 +1,5 @@
 name: KurosioATS
-version: 1.5.3
+version: 1.5.4
 main: kurosio.kurosioats.KurosioATS
 api-version: 1.15
 author: kurosio381

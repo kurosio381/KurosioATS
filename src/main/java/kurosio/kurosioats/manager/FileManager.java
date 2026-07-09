@@ -66,10 +66,7 @@ public class FileManager {
 
     public void saveReception(List<ReceptionPlayer> players) {
 
-        if (plugin.getConfig().getBoolean("settings.clear-before-sync")) {
             receptionConfig.set("players", null);
-        }
-
 
         for (ReceptionPlayer player : players) {
 
@@ -144,9 +141,7 @@ public class FileManager {
 
     public void saveResult(List<ResultPlayer> players) {
 
-        if (plugin.getConfig().getBoolean("settings.clear-before-lottery")) {
             resultConfig.set("result", null);
-        }
 
 
         for (ResultPlayer player : players) {

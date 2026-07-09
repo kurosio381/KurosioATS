@@ -1,5 +1,7 @@
 # KurosioATS
- 即売会イベント用プラグイン
+ 即売会イベント用プラグイン  
+サークル参加者の受付・抽選・メッセージ表示  
+ワープ地点の作成が可能
  
 ## 使い方・導入
 ### １．下準備
@@ -91,8 +93,21 @@ lottery:
  exclude:
   - <抽選しないプロット種類>
 status: <BEFORE/ACCEPTING/RESULT>
-settings:
- clear-before-sync: true
- clear-before-lottery: true
 ```
+#### 解説 
+`id`:取得するSpreadSheetのURLの一部分を記入  
+　　 https ://docs.google.com/spreadsheets/d/**_この部分_**/edit?resourcekey=&gid=......  
+`sheet`:SpreadSheetの下部にあるタブのシート名を必ず記載  
+`mcid`:SpreadSheetのMCIDの部分の列番号を記載  
+　　　 A=0,B=1,C=2...  
+`plot`:SpreadSheetのプロット希望部分の列番号を記載  
+　　　mcidと同じ、3択回答の頭文字A,B,Sを取得  
+`max`:各抽選で行う各プロット数の上限を設定  
+`exclude`:抽選しないプロット種類を設定 (例:S)  
+`status`:鯖内コマンド/status <状態>で変更可能  
+　　　　　BEFORE:抽選前  
+　　　　　ACCEPTING:受付中  
+　　　　　RESULT:抽選後  
+
+Ver:1.5.4 2026/07/09
 
