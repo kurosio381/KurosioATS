@@ -31,6 +31,7 @@
 `config.yml`ー設定用ファイル  
 `reception.yml`ー受付用ファイル  
 `result.yml`ー抽選後ファイル  
+`warps.yml`ーワープ情報用ファイル  
 `main.txt`ー`/ats main`で内容を表示させます。  
 `rule.txt`ー`/ats rule`で内容を表示させます。  
 `massage.txt`ー抽選後に`/ats check`をすることで、`result.yml`に記載されているユーザーのみ内容を表示させます。
@@ -109,5 +110,5 @@ status: <BEFORE/ACCEPTING/RESULT>
 　　　　　ACCEPTING:受付中  
 　　　　　RESULT:抽選後  
 
-Ver:1.5.4 2026/07/09
+Ver:1.5.5 2026/07/10
 

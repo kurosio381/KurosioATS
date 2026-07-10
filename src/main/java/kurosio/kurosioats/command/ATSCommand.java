@@ -560,7 +560,7 @@ public class ATSCommand implements CommandExecutor {
             }
 
             if (args.length != 2) {
-                sender.sendMessage(ChatUtil.format("&c使用方法: /ats status <BEFORE|ACCEPTING|RESULT>"));
+                sender.sendMessage(ChatUtil.format("&c使用方法: /ats status <BEFORE/ACCEPTING/RESULT>"));
                 return true;
             }
 
@@ -600,11 +600,14 @@ public class ATSCommand implements CommandExecutor {
         sender.sendMessage(ChatUtil.color("&a/ats main &f- 開催概要"));
         sender.sendMessage(ChatUtil.color("&a/ats rule &f- ルール"));
         sender.sendMessage(ChatUtil.color("&a/ats check &f- 受付・抽選状況"));
+        sender.sendMessage(ChatUtil.color("&a/ats warp <password> &f- 指定場所からTPします。"));
         if (sender.hasPermission("ats.admin")) {
             sender.sendMessage(ChatUtil.color("&c【運営専用】"));
             sender.sendMessage(ChatUtil.color("&a/ats sync &f- 受付情報同期"));
             sender.sendMessage(ChatUtil.color("&a/ats status <状態> &f- 受付状態変更"));
             sender.sendMessage(ChatUtil.color("&a/ats lottery &f- 抽選開始"));
+            sender.sendMessage(ChatUtil.color("&a/ats warp create <name> &f-ワープ地点を設定"));
+            sender.sendMessage(ChatUtil.color("&a/ats warp set <ワープ設定名> <name1> <name2> <password> &fワープを設定"));
         }
 
         sender.sendMessage(ChatUtil.color("&b&m----------------------------------------"));
